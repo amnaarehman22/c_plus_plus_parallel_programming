@@ -81,12 +81,12 @@ clean: CMakeFiles/c_plus_plus_parallel_programming.dir/clean
 CMakeFiles/c_plus_plus_parallel_programming.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_plus_plus_parallel_programming.dir/build.make CMakeFiles/c_plus_plus_parallel_programming.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_plus_plus_parallel_programming.dir/build.make CMakeFiles/c_plus_plus_parallel_programming.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/amnaabdulrehman/Documents/GitHub/c_plus_plus_parallel_programming/build/CMakeFiles --progress-num=1,2,3,4 "Built target c_plus_plus_parallel_programming"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/amnaabdulrehman/Documents/GitHub/c_plus_plus_parallel_programming/build/CMakeFiles --progress-num=1,2,3 "Built target c_plus_plus_parallel_programming"
 .PHONY : CMakeFiles/c_plus_plus_parallel_programming.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/c_plus_plus_parallel_programming.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/amnaabdulrehman/Documents/GitHub/c_plus_plus_parallel_programming/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/amnaabdulrehman/Documents/GitHub/c_plus_plus_parallel_programming/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/c_plus_plus_parallel_programming.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/amnaabdulrehman/Documents/GitHub/c_plus_plus_parallel_programming/build/CMakeFiles 0
 .PHONY : CMakeFiles/c_plus_plus_parallel_programming.dir/rule

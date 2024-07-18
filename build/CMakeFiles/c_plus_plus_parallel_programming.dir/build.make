@@ -83,24 +83,10 @@ CMakeFiles/c_plus_plus_parallel_programming.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/c_plus_plus_parallel_programming.dir/main.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/amnaabdulrehman/Documents/GitHub/c_plus_plus_parallel_programming/main.cpp -o CMakeFiles/c_plus_plus_parallel_programming.dir/main.cpp.s
 
-CMakeFiles/c_plus_plus_parallel_programming.dir/main_thread.cpp.o: CMakeFiles/c_plus_plus_parallel_programming.dir/flags.make
-CMakeFiles/c_plus_plus_parallel_programming.dir/main_thread.cpp.o: /Users/amnaabdulrehman/Documents/GitHub/c_plus_plus_parallel_programming/main_thread.cpp
-CMakeFiles/c_plus_plus_parallel_programming.dir/main_thread.cpp.o: CMakeFiles/c_plus_plus_parallel_programming.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/amnaabdulrehman/Documents/GitHub/c_plus_plus_parallel_programming/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/c_plus_plus_parallel_programming.dir/main_thread.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/c_plus_plus_parallel_programming.dir/main_thread.cpp.o -MF CMakeFiles/c_plus_plus_parallel_programming.dir/main_thread.cpp.o.d -o CMakeFiles/c_plus_plus_parallel_programming.dir/main_thread.cpp.o -c /Users/amnaabdulrehman/Documents/GitHub/c_plus_plus_parallel_programming/main_thread.cpp
-
-CMakeFiles/c_plus_plus_parallel_programming.dir/main_thread.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/c_plus_plus_parallel_programming.dir/main_thread.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/amnaabdulrehman/Documents/GitHub/c_plus_plus_parallel_programming/main_thread.cpp > CMakeFiles/c_plus_plus_parallel_programming.dir/main_thread.cpp.i
-
-CMakeFiles/c_plus_plus_parallel_programming.dir/main_thread.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/c_plus_plus_parallel_programming.dir/main_thread.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/amnaabdulrehman/Documents/GitHub/c_plus_plus_parallel_programming/main_thread.cpp -o CMakeFiles/c_plus_plus_parallel_programming.dir/main_thread.cpp.s
-
 CMakeFiles/c_plus_plus_parallel_programming.dir/websocket_server.cpp.o: CMakeFiles/c_plus_plus_parallel_programming.dir/flags.make
 CMakeFiles/c_plus_plus_parallel_programming.dir/websocket_server.cpp.o: /Users/amnaabdulrehman/Documents/GitHub/c_plus_plus_parallel_programming/websocket_server.cpp
 CMakeFiles/c_plus_plus_parallel_programming.dir/websocket_server.cpp.o: CMakeFiles/c_plus_plus_parallel_programming.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/amnaabdulrehman/Documents/GitHub/c_plus_plus_parallel_programming/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/c_plus_plus_parallel_programming.dir/websocket_server.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/amnaabdulrehman/Documents/GitHub/c_plus_plus_parallel_programming/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/c_plus_plus_parallel_programming.dir/websocket_server.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/c_plus_plus_parallel_programming.dir/websocket_server.cpp.o -MF CMakeFiles/c_plus_plus_parallel_programming.dir/websocket_server.cpp.o.d -o CMakeFiles/c_plus_plus_parallel_programming.dir/websocket_server.cpp.o -c /Users/amnaabdulrehman/Documents/GitHub/c_plus_plus_parallel_programming/websocket_server.cpp
 
 CMakeFiles/c_plus_plus_parallel_programming.dir/websocket_server.cpp.i: cmake_force
@@ -114,20 +100,20 @@ CMakeFiles/c_plus_plus_parallel_programming.dir/websocket_server.cpp.s: cmake_fo
 # Object files for target c_plus_plus_parallel_programming
 c_plus_plus_parallel_programming_OBJECTS = \
 "CMakeFiles/c_plus_plus_parallel_programming.dir/main.cpp.o" \
-"CMakeFiles/c_plus_plus_parallel_programming.dir/main_thread.cpp.o" \
 "CMakeFiles/c_plus_plus_parallel_programming.dir/websocket_server.cpp.o"
 
 # External object files for target c_plus_plus_parallel_programming
 c_plus_plus_parallel_programming_EXTERNAL_OBJECTS =
 
 c_plus_plus_parallel_programming: CMakeFiles/c_plus_plus_parallel_programming.dir/main.cpp.o
-c_plus_plus_parallel_programming: CMakeFiles/c_plus_plus_parallel_programming.dir/main_thread.cpp.o
 c_plus_plus_parallel_programming: CMakeFiles/c_plus_plus_parallel_programming.dir/websocket_server.cpp.o
 c_plus_plus_parallel_programming: CMakeFiles/c_plus_plus_parallel_programming.dir/build.make
 c_plus_plus_parallel_programming: /opt/homebrew/anaconda3/lib/libboost_system.dylib
 c_plus_plus_parallel_programming: /opt/homebrew/anaconda3/lib/libboost_thread.dylib
+c_plus_plus_parallel_programming: /opt/homebrew/Cellar/openssl@3/3.3.1/lib/libssl.dylib
+c_plus_plus_parallel_programming: /opt/homebrew/Cellar/openssl@3/3.3.1/lib/libcrypto.dylib
 c_plus_plus_parallel_programming: CMakeFiles/c_plus_plus_parallel_programming.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/amnaabdulrehman/Documents/GitHub/c_plus_plus_parallel_programming/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable c_plus_plus_parallel_programming"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/amnaabdulrehman/Documents/GitHub/c_plus_plus_parallel_programming/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable c_plus_plus_parallel_programming"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/c_plus_plus_parallel_programming.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

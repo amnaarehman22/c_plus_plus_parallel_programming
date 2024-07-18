@@ -1,37 +1,23 @@
-#include "main_thread.h"
-#include "websocket_server.h"
 #include <iostream>
 #include <boost/asio.hpp>
-#include <thread>
-
-namespace net = boost::asio;
-using tcp = boost::asio::ip::tcp;
+#include "websocket_server.h"
 
 int main() {
     try {
-        // Initialize Boost Asio io_context
-        net::io_context io_context;
+        // Create an io_context for the server
+        net::io_context ioc;
 
-        // Create a separate thread for the main sensor data processing
-        std::thread mainThreadObj(mainThread);
+        // Define the endpoint (port 8080) the server will listen on
+        tcp::endpoint endpoint(tcp::v4(), 8080);
 
-        // Define endpoint for websocket server
-        tcp::endpoint endpoint(tcp::v4(), 8080); // Use port 8080 for websocket
+        // Create and run the WebSocket server
+        WebsocketServer server(ioc, endpoint);
+        server.run();
 
-        // Create and start the websocket server
-        WebsocketServer websocketServer(io_context, endpoint);
-        websocketServer.run();
-
-        // Join the main thread to the main process
-        if (mainThreadObj.joinable()) {
-            mainThreadObj.join();
-        }
-
-        // Run the io_context to handle asynchronous operations
-        io_context.run();
-    } catch(const std::exception& e) {
+        // Run the io_context to handle asynchronous events
+        ioc.run();
+    } catch (const std::exception& e) {
         std::cerr << "Error: " << e.what() << std::endl;
-        return EXIT_FAILURE;
     }
 
     return 0;

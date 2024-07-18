@@ -5,7 +5,13 @@
 #include <iomanip>
 #include <sstream>
 #include <random>
-#include <thread>  // For std::this_thread::sleep_for
+#include <thread>
+#include <boost/beast.hpp>
+#include <boost/asio.hpp>
+
+using tcp = boost::asio::ip::tcp;
+namespace websocket = boost::beast::websocket;
+namespace net = boost::asio;
 
 // Function to generate dummy sensor data in JSON format
 std::string generateDummySensorData(int sensorId, double x, double y, double z) {
@@ -41,20 +47,45 @@ void mainThread() {
     std::mt19937 gen(rd());
     std::uniform_real_distribution<> disCoord(-10.0, 10.0);
 
-    while (true) {
-        // Generate random sensor data
-        int sensorId = 1;  // Dummy sensor ID
-        double x = disCoord(gen);
-        double y = disCoord(gen);
-        double z = disCoord(gen);
+    // Initialize Boost Asio io_context
+    net::io_context io_context;
 
-        std::string sensorData = generateDummySensorData(sensorId, x, y, z);
+    // Define WebSocket endpoint and URI
+    tcp::resolver resolver(io_context);
+    websocket::stream<tcp::socket> ws(io_context);
 
-        // Simulate processing delay
-        std::this_thread::sleep_for(std::chrono::seconds(1));
+    try {
+        // Resolve the WebSocket endpoint
+        auto const results = resolver.resolve("localhost", "8080");
 
-        // TODO: Store sensorData in caching struct or send to websocket server
-        // For demonstration, just print the generated sensor data
-        std::cout << "Generated sensor data: " << sensorData << std::endl;
+        // Connect to the WebSocket server
+        net::connect(ws.next_layer(), results.begin(), results.end());
+
+        // Perform the WebSocket handshake
+        ws.handshake("localhost", "/");
+
+        while (true) {
+            // Generate random sensor data
+            int sensorId = 1;  // Dummy sensor ID
+            double x = disCoord(gen);
+            double y = disCoord(gen);
+            double z = disCoord(gen);
+
+            std::string sensorData = generateDummySensorData(sensorId, x, y, z);
+
+            // Send sensor data via WebSocket
+            ws.write(net::buffer(sensorData));
+
+            // Simulate processing delay
+            std::this_thread::sleep_for(std::chrono::seconds(1));
+
+            // For demonstration, print the generated sensor data
+            std::cout << "Generated sensor data: " << sensorData << std::endl;
+        }
+
+        // Close the WebSocket connection
+        ws.close(websocket::close_code::normal);
+    } catch (const std::exception& e) {
+        std::cerr << "Error: " << e.what() << std::endl;
     }
 }

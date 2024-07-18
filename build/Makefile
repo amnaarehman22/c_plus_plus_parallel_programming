@@ -153,30 +153,6 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_plus_plus_parallel_programming.dir/build.make CMakeFiles/c_plus_plus_parallel_programming.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-main_thread.o: main_thread.cpp.o
-.PHONY : main_thread.o
-
-# target to build an object file
-main_thread.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_plus_plus_parallel_programming.dir/build.make CMakeFiles/c_plus_plus_parallel_programming.dir/main_thread.cpp.o
-.PHONY : main_thread.cpp.o
-
-main_thread.i: main_thread.cpp.i
-.PHONY : main_thread.i
-
-# target to preprocess a source file
-main_thread.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_plus_plus_parallel_programming.dir/build.make CMakeFiles/c_plus_plus_parallel_programming.dir/main_thread.cpp.i
-.PHONY : main_thread.cpp.i
-
-main_thread.s: main_thread.cpp.s
-.PHONY : main_thread.s
-
-# target to generate assembly for a file
-main_thread.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/c_plus_plus_parallel_programming.dir/build.make CMakeFiles/c_plus_plus_parallel_programming.dir/main_thread.cpp.s
-.PHONY : main_thread.cpp.s
-
 websocket_server.o: websocket_server.cpp.o
 .PHONY : websocket_server.o
 
@@ -213,9 +189,6 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... main_thread.o"
-	@echo "... main_thread.i"
-	@echo "... main_thread.s"
 	@echo "... websocket_server.o"
 	@echo "... websocket_server.i"
 	@echo "... websocket_server.s"

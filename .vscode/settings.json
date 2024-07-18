@@ -1,3 +1,7 @@
 {
-    "cmake.sourceDirectory": "/Users/amnaabdulrehman/Documents/GitHub/c_plus_plus_parallel_programming"
+    "cmake.sourceDirectory": "/Users/amnaabdulrehman/Documents/GitHub/c_plus_plus_parallel_programming",
+    "files.associations": {
+        ".fantomasignore": "ignore",
+        "ostream": "cpp"
+    }
 }

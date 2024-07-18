@@ -9,7 +9,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/amnaabdulrehman/Documents/GitHub/c_plus_plus_parallel_programming/main.cpp" "CMakeFiles/c_plus_plus_parallel_programming.dir/main.cpp.o" "gcc" "CMakeFiles/c_plus_plus_parallel_programming.dir/main.cpp.o.d"
-  "/Users/amnaabdulrehman/Documents/GitHub/c_plus_plus_parallel_programming/main_thread.cpp" "CMakeFiles/c_plus_plus_parallel_programming.dir/main_thread.cpp.o" "gcc" "CMakeFiles/c_plus_plus_parallel_programming.dir/main_thread.cpp.o.d"
   "/Users/amnaabdulrehman/Documents/GitHub/c_plus_plus_parallel_programming/websocket_server.cpp" "CMakeFiles/c_plus_plus_parallel_programming.dir/websocket_server.cpp.o" "gcc" "CMakeFiles/c_plus_plus_parallel_programming.dir/websocket_server.cpp.o.d"
   )
 
