@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/Users/amnaabdulrehman/Documents/GitHub/c_plus_plus_parallel_programming/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DBOOST_THREAD_DYN_LINK -DBOOST_THREAD_NO_LIB -isystem /opt/homebrew/anaconda3/include -g -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -o CMakeFiles/c_plus_plus_parallel_programming.dir/main.cpp.o -c /Users/amnaabdulrehman/Documents/GitHub/c_plus_plus_parallel_programming/main.cpp",
+  "file": "/Users/amnaabdulrehman/Documents/GitHub/c_plus_plus_parallel_programming/main.cpp",
+  "output": "CMakeFiles/c_plus_plus_parallel_programming.dir/main.cpp.o"
+},
+{
+  "directory": "/Users/amnaabdulrehman/Documents/GitHub/c_plus_plus_parallel_programming/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DBOOST_THREAD_DYN_LINK -DBOOST_THREAD_NO_LIB -isystem /opt/homebrew/anaconda3/include -g -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -o CMakeFiles/c_plus_plus_parallel_programming.dir/main_thread.cpp.o -c /Users/amnaabdulrehman/Documents/GitHub/c_plus_plus_parallel_programming/main_thread.cpp",
+  "file": "/Users/amnaabdulrehman/Documents/GitHub/c_plus_plus_parallel_programming/main_thread.cpp",
+  "output": "CMakeFiles/c_plus_plus_parallel_programming.dir/main_thread.cpp.o"
+},
+{
+  "directory": "/Users/amnaabdulrehman/Documents/GitHub/c_plus_plus_parallel_programming/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DBOOST_THREAD_DYN_LINK -DBOOST_THREAD_NO_LIB -isystem /opt/homebrew/anaconda3/include -g -std=gnu++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -o CMakeFiles/c_plus_plus_parallel_programming.dir/websocket_server.cpp.o -c /Users/amnaabdulrehman/Documents/GitHub/c_plus_plus_parallel_programming/websocket_server.cpp",
+  "file": "/Users/amnaabdulrehman/Documents/GitHub/c_plus_plus_parallel_programming/websocket_server.cpp",
+  "output": "CMakeFiles/c_plus_plus_parallel_programming.dir/websocket_server.cpp.o"
+}
+]
